@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cafe Valentina</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body class="body2" style="padding-top: 70px">
+	
+
+
+	<form>
+		<div id="name">
+		  <label for="task_name">tarea</label>
+		  <input type="text" id="task_name" name="task_name"></input>
+		</div>
+		<label>estado</label>
+		<div id="state">
+		  <input type="chekbox" id="task_todo" name="task_state" value="todo"></input>
+		  <label for="task_todo">pendiente</label>
+		
+		  <input type="chekbox" id="task_prog" name="task_state" value="progress"></input>
+		  <label for="task_prog">en progreso</label>
+	  
+		  <input type="chekbox" id="task_done" name="task_state" value="done"></input>
+		  <label for="task_done">hecho</label>
+	  
+		</div>
+		<div id="state">
+		  <label for="task_detail">detalle</label>
+		  <textarea id="task_detail" name="task_detail"></textarea>
+		</div>
+		<div class="button">
+		<button type="submit">Guardar</button>
+		
+		</div>
+	  </form>
+	  
+
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>
