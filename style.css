@@ -92,6 +92,7 @@ div>img {
   background: #FFFFFF;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 
@@ -102,12 +103,16 @@ div>img {
   height: 300px;
   margin-top: 100px;
   padding: 20px;
+  position: relative;
 }
 
 .hijo {
   background: chartreuse;
   width: 100px;
   height: 100px;
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
 
 }
 
@@ -117,9 +122,13 @@ div>img {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  justify-content: space-between;
-}
+  gap: 20px;
+  height: 100vh;
+  
+  }
+
 
 .uno {
   background: red;
@@ -143,6 +152,43 @@ div>img {
 }
 
 .cuatro {
+  background: darkorchid;
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+}
+
+/* centrar div */
+
+.container3{
+display: grid;
+place-items: center;
+border: 2px solid black;
+
+}
+
+.cinco {
+  background: red;
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+}
+
+.seis {
+  background: blue;
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+}
+
+.siete {
+  background: orange;
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+}
+
+.ocho {
   background: darkorchid;
   width: 200px;
   height: 200px;
