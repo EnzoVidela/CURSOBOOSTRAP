@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <title>Proyecto1</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+        }
+
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(70, 62, 57);
+            padding: 10px;
+            align-items: center;
+        }
+
+        .texto_logo {
+            color: white;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+
+        }
+
+        .logo img {
+
+            height: 50px;
+        }
+
+        nav{
+            align-items: center;
+        }
+
+        li {
+            float: left;
+            border-right: 1px solid #bbb;
+
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: dimgray
+        }
+
+        @media(max-width: 600px){
+            header{
+                flex-direction: column;
+            }
+            nav{
+                padding: 10px;
+            }
+            li{
+                float: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="index.html">
+            <img src="images/cake.png" alt="queque">
+            <h2 class="texto_logo">Menu Queques</h2>
+        </a>
+        <nav>
+            <ul>
+                <li class="active">
+                    <a href="proyecto1.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="#">contactos</a>
+                </li>
+                <li>
+                    <a href="#">buscar</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+</body>
+
+</html>
