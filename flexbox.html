@@ -8,24 +8,85 @@
 	<title>Cafe Valentina</title>
 	<!-- Bootstrap -->
 	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
-	<link href="style.css" rel="stylesheet" type="text/css">
+	<style>
+		.body2 {
+			background: #FFFFFF;
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		div>img {
+			border-radius: 8px;
+			width: 100%;
+			height: auto;
+			box-shadow: 0px 0px 30px #000;
+		}
+
+
+		/* flexbox */
+		.container2 {
+			background: darkgreen;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+			gap: 20px;
+			height: 100vh;
+
+		}
+
+
+		.uno {
+			background: red;
+			width: 200px;
+			height: 200px;
+			border-radius: 15px;
+		}
+
+		.dos {
+			background: blue;
+			width: 200px;
+			height: 200px;
+			border-radius: 15px;
+		}
+
+		.tres {
+			background: orange;
+			width: 200px;
+			height: 200px;
+			border-radius: 15px;
+		}
+
+		.cuatro {
+			background: darkorchid;
+			width: 200px;
+			height: 200px;
+			border-radius: 15px;
+		}
+	</style>
+
+
+
 </head>
+
 <body class="body2">
-<div class="container2">
-	<div class="uno"><img src="images/peliculas/02_plt_payoff_4x5_arg_484b4a65.jpg"></div>
-	<div class="dos"><img src="images/peliculas/017_farmdid-01_keyart_rgb-fin2_ns_simple_ec2304ef.jpg"></div>
-	<div class="tres"><img src="images/peliculas/36686-750845-20210901052221_19669909.jpg"></div>
-	<div class="cuatro"><img src="images//peliculas/56015l02_bigsal_argentina_intpayoff_4x5_b6776139.jpg"></div>
+	<div class="container2">
+		<div class="uno"><img src="images/peliculas/02_plt_payoff_4x5_arg_484b4a65.jpg"></div>
+		<div class="dos"><img src="images/peliculas/017_farmdid-01_keyart_rgb-fin2_ns_simple_ec2304ef.jpg"></div>
+		<div class="tres"><img src="images/peliculas/36686-750845-20210901052221_19669909.jpg"></div>
+		<div class="cuatro"><img src="images//peliculas/56015l02_bigsal_argentina_intpayoff_4x5_b6776139.jpg"></div>
 
 
-</div>
+	</div>
 
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery-3.4.1.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap-4.4.1.js"></script>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap-4.4.1.js"></script>
 </body>
 
 </html>
