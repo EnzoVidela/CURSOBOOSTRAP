@@ -8,49 +8,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Proyecto2</title>
     <style>
-        html{
+        html {
             background-color: blueviolet;
         }
-        
-        body{
+
+        body {
             font-family: sans-serif;
             background-color: aqua;
 
         }
-        .contenedor-imagenes{
+
+        .contenedor-imagenes {
             margin: 100px auto;
             display: flex;
             align-items: center;
             justify-content: center;
             width: 500px;
             height: 100vh;
-            
-        }
-        
-       img{
-        width: 100px;
-        height: 100px;
-       }
-        .blastoice{
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
+
         }
 
-       .blastoice .nombre{
-        background-color: rgb(23, 169, 42);
-        border-radius: 5px;
-        display: none;
-        top: 200px;
+        img {
+            width: 100px;
+            height: 100px;
         }
-        .blastoice:hover .nombre{
+
+        .blastoice {
             display: flex;
+            flex-direction: column-reverse;
+            /*primero va la imagen de blastoice despues el nombre por eso column-reverse para que el nombre quede arriba*/
+            align-items: center;
+        }
+
+        .blastoice .nombre {
+            background-color: rgb(23, 169, 42);
+            border-radius: 5px;
+            display: none;
+            /* se usa display none para que no se muestre el contenido de este bloque */
             top: 200px;
         }
 
-
-
-
+        .blastoice:hover .nombre {
+            display: flex;
+            /* se usa el hover para que el nombre se muestre cuando se pasa el cursos por encima */
+            top: 200px;
+        }
     </style>
 </head>
 
@@ -61,36 +63,36 @@
         </nav>
     </header>
     <div class="contenedor-imagenes">
-            <div class="blastoice">
-                <img src="images/pokemones/blastoise.png" alt="blastoice">
-                <span class="nombre">
-                    <span class="text">blastoice</span>
-                </span>
-            </div>
-            <div class="bulbasaur">
-                <img src="images/pokemones/bulbasaur.png" alt="bulbasaur">
-                <span class="nombre">
-                    <span class="text">bulbasaur</span>
-                </span>
-            </div>
-            <div class="charizard">
-                <img src="images/pokemones/charizard.png" alt="charizard">
-                <span class="nombre">
-                    <span class="text">charizard</span>
-                </span>
-            </div>
-            <div class="gengar">
-                <img src="images/pokemones/gengar.png" alt="gengar">
-                <span class="nombre">
-                    <span class="text">gengar</span>
-                </span>
-            </div>
-            <div class="squirtle">
-                <img src="images/pokemones/squirtle.png" alt="squirtle">
-                <span class="nombre">
-                    <span class="text">squirtle</span>
-                </span>
-            </div>
+        <div class="blastoice">
+            <img src="images/pokemones/blastoise.png" alt="blastoice">
+            <span class="nombre">
+                <span class="text">blastoice</span>
+            </span>
+        </div>
+        <div class="bulbasaur">
+            <img src="images/pokemones/bulbasaur.png" alt="bulbasaur">
+            <span class="nombre">
+                <span class="text">bulbasaur</span>
+            </span>
+        </div>
+        <div class="charizard">
+            <img src="images/pokemones/charizard.png" alt="charizard">
+            <span class="nombre">
+                <span class="text">charizard</span>
+            </span>
+        </div>
+        <div class="gengar">
+            <img src="images/pokemones/gengar.png" alt="gengar">
+            <span class="nombre">
+                <span class="text">gengar</span>
+            </span>
+        </div>
+        <div class="squirtle">
+            <img src="images/pokemones/squirtle.png" alt="squirtle">
+            <span class="nombre">
+                <span class="text">squirtle</span>
+            </span>
+        </div>
     </div>
 </body>
 

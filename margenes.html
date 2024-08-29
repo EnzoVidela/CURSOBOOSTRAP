@@ -39,6 +39,41 @@
 		.parrafo1 {
 			color: blue;
 		}
+
+		.caja0 {
+			width: 400px;
+			height: 400px;
+			background-color: rgb(62, 10, 173);
+
+
+		}
+
+		.caja1 {
+			width: auto;
+			background-color: aqua;
+			border: 20px;
+			border-color: black;
+			margin:100px;
+		}
+/*la caja 1 tiene margen de 100px pero su ancho es auto por lo que respetara el tamaño del padre la caja 0
+la caja2 tiene un margen de 100px tambien pero su ancho es 100% por lo que tomara todo el ancho del padre o sea
+los 400px mas los 100px del margen por lo que se desbordara*/
+		.caja2 {
+			width: 100%;
+			background-color: darkorchid;
+			border: 50px;
+			margin:100px;
+			border-color: solid red;
+		}
+
+
+
+		.box {
+  			border: 5px solid darkblue;
+  			width: 50vw;
+  			height: 50vh;
+  			font-size: 10vh;
+		}
 	</style>
 
 </head>
@@ -51,7 +86,39 @@
 	</div>
 
 
+	<div class="caja0">
+		<p>caja0</p>
 
+		<div class="caja1">
+			<p>caja1</p>
+		</div>
+
+		<div class="caja2">
+			<p>caja2</p>
+		</div>
+	</div>
+
+
+	<div style="height: 50px; background-color:red">
+		<div id="innerDiv" style="height: 100%">
+			<p>hola</p>
+		</div>
+	</div>
+
+	<div style="height: 50px; background-color: blue;">
+		<div id="innerDiv" style="height: auto">
+			  <div id="evenInner" style="height: 10px">
+				<p>holas</p>
+			  </div>
+		</div>
+	</div>
+
+
+
+	<div class="box">
+		A
+		<p style="font-size: 20px;">siempre valdra el 50% del tamaño de la pantalla</p>
+	  </div>
 
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
