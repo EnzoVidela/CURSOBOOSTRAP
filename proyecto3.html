@@ -9,17 +9,101 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Proyecto 3</title>
 </head>
+<!-- pagina responsive usandpo Bootstrap -->
 
 <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <!--este vanbar es de boostrap y representa las clases que pérmiten menu responsivo -->
         <div class="container">
-            <a href="#" class="navbar-brand"><span class="text-primary">logo</span></a>
-            <button class="navbar-toggler" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+            <a href="#" class="navbar-brand">
+                <span class="text-primary">
+                    <img src="images/autos/pr1.png" alt="logo" width="50px" height="50px">
+                </span>
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" type="button" data-bs-target="#navbar-start" aria-controls="navbar-start" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbar-start">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="navbar-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link" href="#">Nosotros</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link" href="#">Productos</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link" href="#">AcercaDe</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+            </button>
+            <button type="button" data-bs-target="#carouselId" data-bs-slide-to="1"  aria-current="true" aria-label="Slide 2">
+            </button>
+            <button type="button" data-bs-target="#carouselId" data-bs-slide-to="2"  aria-current="true" aria-label="Slide 3">
+            </button>
         </div>
 
 
 
-    </nav>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/autos/car1.jpg" class="d-block w-100" alt="auto">
+                <div class="carousel-caption">
+                    <h5>Los mejores motores</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam delectus impedit vel? Autem id dicta eius suscipit tempore explicabo qui aperiam cum cupiditate? Laboriosam, inventore autem! Illo culpa dolore dolores!
+                    </p>
+                    <p><a href="#" class="btn btn-primary mt-3">leer mas</a></p>
+                </div>
+
+            </div>
+            <div class="carousel-item">
+                <img src="images/autos/car2.png" class="d-block w-100" alt="auto">
+                <div class="carousel-caption">
+                    <h5>Los mejores motores</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam delectus impedit vel? Autem id dicta eius suscipit tempore explicabo qui aperiam cum cupiditate? Laboriosam, inventore autem! Illo culpa dolore dolores!
+                    </p>
+                    <p><a href="#" class="btn btn-primary mt-3">leer mas</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/autos/car3.jpg" class="d-block w-100" alt="auto">
+                <div class="carousel-caption">
+                    <h5>Los mejores motores</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam delectus impedit vel? Autem id dicta eius suscipit tempore explicabo qui aperiam cum cupiditate? Laboriosam, inventore autem! Illo culpa dolore dolores!
+                    </p>
+                    <p><a href="#" class="btn btn-primary mt-3">leer mas</a></p>
+                </div>
+            </div>
+
+
+        </div>
+
+<button>
+
+</button>
+<button>
+    
+</button>
+
+    </div>
 
 
 
@@ -28,7 +112,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
