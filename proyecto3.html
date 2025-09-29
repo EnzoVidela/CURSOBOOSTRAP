@@ -11,35 +11,41 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-        *{
-            font-family: "Poppins",sans-serif;
+        * {
+            font-family: "Poppins", sans-serif;
 
         }
-        .navbar a{
+
+        .navbar a {
             font-weight: 600;
             font-size: 18px;
         }
+
         .carousel-item {
             min-height: 400px;
 
         }
-        .carousel-caption{
+
+        .carousel-caption {
             bottom: 220px;
             z-index: 2;
         }
-        .carousel-caption h5{
+
+        .carousel-caption h5 {
             font-size: 70px;
             font-weight: 600;
             text-transform: uppercase;
             margin-top: 25px;
         }
-        .carousel-caption p{
+
+        .carousel-caption p {
             width: 60%;
             margin: 10px auto;
             font-size: 10px;
 
         }
-        .carousel-inner::before{
+
+        .carousel-inner::before {
             content: '';
             position: absolute;
             width: 100%;
@@ -49,102 +55,124 @@
             background: rgba(0, 0, 0, 0.4);
             z-index: 1;
         }
-        .services{
+
+        .services {
             padding: 80px 0;
         }
-        .bg-car1{
-            background-image: linear-gradient(
-                rgba(0,0,0,0.5),
-                rgba(0,0,0,0.5)
-            ),url(images/autos/c1.jpg);
-            background-position: centercenter; 
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        .bg-car2{
-            background-image: linear-gradient(
-                rgba(0,0,0,0.5),
-                rgba(0,0,0,0.5)
-            ),url(images/autos/c2.jpg);
-            background-position: centercenter; 
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        .bg-car3{
-            background-image: linear-gradient(
-                rgba(0,0,0,0.5),
-                rgba(0,0,0,0.5)
-            ),url(images/autos/c3.jpg);
-            background-position: centercenter; 
+
+        .bg-car1 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)), url(images/autos/c1.jpg);
+            background-position: centercenter;
             background-repeat: no-repeat;
             background-size: cover;
         }
 
-        .box-icons i{
+        .bg-car2 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)), url(images/autos/c2.jpg);
+            background-position: centercenter;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .bg-car3 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)), url(images/autos/c3.jpg);
+            background-position: centercenter;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .box-icons i {
             font-size: 40px;
 
         }
-        .box-icons h3{
+
+        .box-icons h3 {
             font-size: 20px;
             font-weight: 800;
 
         }
 
-        .product{
+        .product {
             padding: 80px 0;
         }
 
-        .card image{
+        .card image {
             width: 150px;
             height: 150px;
         }
-        .banner{
+
+        .banner {
             padding: 50px 0;
             margin-bottom: 80px;
             background-color: #eae5df;
         }
-        .banner h2{
+
+        .banner h2 {
             font-size: 40px;
             text-transform: uppercase;
             font-weight: 800;
         }
-        .banner img{
+
+        .banner img {
             width: 300px;
         }
 
+        .product img {
 
-        @media(max-width : 767px){
-            .carousel-item{
+            width: 200px;
+        }
+
+
+        @media(max-width : 767px) {
+            .carousel-item {
                 min-height: 500px;
             }
+
             .carousel-item img {
                 height: 500px;
             }
-            .carousel-caption{
+
+            .carousel-caption {
                 bottom: 30px;
             }
-            .carousel-caption h5{
+
+            .carousel-caption h5 {
                 font-size: 50px;
                 margin-top: 0;
             }
-            .carousel-caption p{
+
+            .carousel-caption p {
                 width: 100%;
                 font-size: 16px;
             }
-            .services{
+
+            .services {
                 padding: 30px 0;
             }
-            .product{
+
+            .product {
                 padding: 30px 0 0 0;
             }
-            .banner{
+
+            .banner {
                 margin-bottom: 30px;
             }
+        }
 
+        .contenedorProductos{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
 
 
         }
-        
+      
+
+
+
     </style>
 </head>
 <!-- pagina responsive usandpo Bootstrap carusel de autos -->
@@ -253,7 +281,7 @@
         </button>
 
     </div>
-<!--seccion de servicios-->
+    <!--seccion de servicios-->
 
     <section class="services">
         <div class="container">
@@ -353,150 +381,153 @@
             </div>
         </div>
     </section>
-<!--seccion de productos-->
+    <!--seccion de productos-->
     <section class="product">
         <div class="comtainer">
+            <p>dentro del container que tiene dos elementos el titulo y los productos</p>
             <div class="row">
                 <div class="col-md-12 ">
                     <div class="section-header text-center pb-5">
                         <!-- pb-5 significa paddin bottom 5 pixeles es el margen con respecto al fondo-->
                         <h2>Productos</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Neque repe iusto!</p>
-
+                        <p>dentro del div row dentro del div col-md-12 dentro del div section header <br> Neque repeiusto!</p>
                     </div>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-12 col-md-12 col-lg-3">
-                    <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
-                        <div class="text-center">
-                            <img src="images/autos/pr1.png" alt="producto1">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">card title</h5>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Error totam, animi iure soluta illum quisquam at repudiandae quos,
-                                cum impedit mollitia,quasi perspiciatis eligendi?
-                            </p>
-                            <a href="#" class="btn btn-primary">Saber mas</a>
+
+            <div class="contenedorProductos">
+                <p>dentro del container de productos</p>
+
+                <div class="row" >
+                    <p>dentro del container row</p>
+                    <div class="col-12 col-md-12 col-lg-3">
+                        <p>dentro del div col-12 producto 1</p>
+                        <div class="card bg-light shadow-sm border-1 px-2 py-3 mb-4">
+                            <div class="text-center">
+                                <p>dentro del div de imagen</p>
+                                <img src="images/autos/pr1.png" alt="producto1">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">card title</h5>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Error totam, animi iure soluta illum quisquam at repudiandae quos,
+                                    cum impedit mollitia,quasi perspiciatis eligendi?
+                                </p>
+                                <a href="#" class="btn btn-primary">Saber mas</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-md-12 col-lg-3">
-                    <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
-                        <div class="text-center">
-                            <img src="images/autos/pr2.png" alt="producto1">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">card title</h5>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Error totam, animi iure soluta illum quisquam at repudiandae quos,
-                                cum impedit mollitia,quasi perspiciatis eligendi?
-                            </p>
-                            <a href="#" class="btn btn-primary">Saber mas</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-12 col-lg-3">
-                    <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
-                        <div class="text-center">
-                            <img src="images/autos/pr3.png" alt="producto1">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">card title</h5>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Error totam, animi iure soluta illum quisquam at repudiandae quos,
-                                cum impedit mollitia,quasi perspiciatis eligendi?
-                            </p>
-                            <a href="#" class="btn btn-primary">Saber mas</a>
+                    <div class="col-12 col-md-12 col-lg-3">
+                        <p>dentro del  producto 2</p>
+                        <div class="card bg-light shadow-sm border-1 px-2 py-3 mb-4">
+                            <div class="text-center">
+                                <img src="images/autos/pr2.png" alt="producto1">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">card title</h5>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Error totam, animi iure soluta illum quisquam at repudiandae quos,
+                                    cum impedit mollitia,quasi perspiciatis eligendi?
+                                </p>
+                                <a href="#" class="btn btn-primary">Saber mas</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-12 col-md-12 col-lg-3">
-                    <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
-                        <div class="text-center">
-                            <img src="images/autos/pr4.png" alt="producto1">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">card title</h5>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Error totam, animi iure soluta illum quisquam at repudiandae quos,
-                                cum impedit mollitia,quasi perspiciatis eligendi?
-                            </p>
-                            <a href="#" class="btn btn-primary">Saber mas</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-12 col-lg-3">
-                    <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
-                        <div class="text-center">
-                            <img src="images/autos/pr5.png" alt="producto1">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">card title</h5>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Error totam, animi iure soluta illum quisquam at repudiandae quos,
-                                cum impedit mollitia,quasi perspiciatis eligendi?
-                            </p>
-                            <a href="#" class="btn btn-primary">Saber mas</a>
+                    <div class="col-12 col-md-12 col-lg-3">
+                        <p>dentro del producto 3</p>
+                        <div class="card bg-light shadow-sm border-1 px-2 py-3 mb-4">
+                            <div class="text-center">
+                                <img src="images/autos/pr3.png" alt="producto1">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">card title</h5>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Error totam, animi iure soluta illum quisquam at repudiandae quos,
+                                    cum impedit mollitia,quasi perspiciatis eligendi?
+                                </p>
+                                <a href="#" class="btn btn-primary">Saber mas</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-12 col-md-12 col-lg-3">
-                    <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
-                        <div class="text-center">
-                            <img src="images/autos/pr6.png" alt="producto1">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">card title</h5>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Error totam, animi iure soluta illum quisquam at repudiandae quos,
-                                cum impedit mollitia,quasi perspiciatis eligendi?
-                            </p>
-                            <a href="#" class="btn btn-primary">Saber mas</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-12 col-lg-3">
-                    <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
-                        <div class="text-center">
-                            <img src="images/autos/pr7.png" alt="producto1">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">card title</h5>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Error totam, animi iure soluta illum quisquam at repudiandae quos,
-                                cum impedit mollitia,quasi perspiciatis eligendi?
-                            </p>
-                            <a href="#" class="btn btn-primary">Saber mas</a>
+                    <div class="col-12 col-md-12 col-lg-3">
+                        <p>dentro del producto 4</p>
+                        <div class="card bg-light shadow-sm border-1 px-2 py-3 mb-4">
+                            <div class="text-center">
+                                <img src="images/autos/pr4.png" alt="producto1">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">card title</h5>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Error totam, animi iure soluta illum quisquam at repudiandae quos,
+                                    cum impedit mollitia,quasi perspiciatis eligendi?
+                                </p>
+                                <a href="#" class="btn btn-primary">Saber mas</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-12 col-md-12 col-lg-3">
-                    <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
-                        <div class="text-center">
-                            <img src="images/autos/pr8.png" alt="producto1">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">card title</h5>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Error totam, animi iure soluta illum quisquam at repudiandae quos,
-                                cum impedit mollitia,quasi perspiciatis eligendi?
-                            </p>
-                            <a href="#" class="btn btn-primary">Saber mas</a>
+                    <div class="col-12 col-md-12 col-lg-3">
+                        <div class="card bg-light shadow-sm border-1 px-2 py-3 mb-4">
+                            <div class="text-center">
+                                <img src="images/autos/pr5.png" alt="producto1">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">card title</h5>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Error totam, animi iure soluta illum quisquam at repudiandae quos,
+                                    cum impedit mollitia,quasi perspiciatis eligendi?
+                                </p>
+                                <a href="#" class="btn btn-primary">Saber mas</a>
+                            </div>
                         </div>
                     </div>
+                    <div class="col-12 col-md-12 col-lg-3">
+                        <div class="card bg-light shadow-sm border-1 px-2 py-3 mb-4">
+                            <div class="text-center">
+                                <img src="images/autos/pr6.png" alt="producto1">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">card title</h5>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Error totam, animi iure soluta illum quisquam at repudiandae quos,
+                                    cum impedit mollitia,quasi perspiciatis eligendi?
+                                </p>
+                                <a href="#" class="btn btn-primary">Saber mas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-3">
+                        <div class="card bg-light shadow-sm border-1 px-2 py-3 mb-4">
+                            <div class="text-center">
+                                <img src="images/autos/pr7.png" alt="producto1">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">card title</h5>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Error totam, animi iure soluta illum quisquam at repudiandae quos,
+                                    cum impedit mollitia,quasi perspiciatis eligendi?
+                                </p>
+                                <a href="#" class="btn btn-primary">Saber mas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-3">
+                        <div class="card bg-light shadow-sm border-1 px-2 py-3 mb-4">
+                            <div class="text-center">
+                                <img src="images/autos/pr8.png" alt="producto1">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">card title</h5>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Error totam, animi iure soluta illum quisquam at repudiandae quos,
+                                    cum impedit mollitia,quasi perspiciatis eligendi?
+                                </p>
+                                <a href="#" class="btn btn-primary">Saber mas</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-
-                
-
 
             </div>
         </div>
@@ -505,15 +536,15 @@
 
 
 
-<!--seccion del baner -->
+    <!--seccion del baner -->
     <section class="banner">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h2>los mejores repuestos</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                         Ipsa nam dolores, totam a eos placeat temporibus. Vero cum possimus eius,
-                         iusto tempore odit dolorum, quo hic earum magni quam aliquam?
+                        iusto tempore odit dolorum, quo hic earum magni quam aliquam?
                     </p>
                     <div>
                         <img src="images/autos/mo1.png" alt="motor">
@@ -555,8 +586,8 @@
                                     <textarea class="form-control" placeholder="mensaje" rows="3" required></textarea>
                                 </div>
                             </div>
-                            <button class="btn btn-primary btn-block mt-3" type="button" >Enviar</button>
-                        </div> 
+                            <button class="btn btn-primary btn-block mt-3" type="button">Enviar</button>
+                        </div>
 
                     </form>
 
@@ -569,7 +600,7 @@
 
     </section>
 
-<!--seccion del footer-->
+    <!--seccion del footer-->
     <footer class="bg-dark p-2 text-center">
         <div class="container">
             <p class="text-white">todos los derechos reservados</p>
